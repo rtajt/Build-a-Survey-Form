@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Just a simple form to fill out for fun. The data isn't going anywhere as
+      of now.
+    </p>
+    <form action="POST" id="survey-form">
+      <fieldset>
+        <legend>Enter your personal info</legend>
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Jimbo Smith"
+        />
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="smithj@email.com"
+        />
+        <label for="number" id="number-label">Age (Optional)</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="1"
+          max="150"
+          placeholder="42"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>What continent are you from?</legend>
+        <select name="dropdown" id="dropdown">
+          <option value="na">North America</option>
+          <option value="sa">South America</option>
+          <option value="eu">Europe</option>
+          <option value="af">Africa</option>
+          <option value="as">Asia</option>
+          <option value="au">Australia</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>What gender are you?</legend>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" />
+      </fieldset>
+      <fieldset>
+        <legend>What programming languages are you interested in?</legend>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="language" id="html" checked />
+        <label for="css">CSS</label>
+        <input type="checkbox" name="language" id="css" />
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="language" id="javascript" />
+        <label for="python">Python</label>
+        <input type="checkbox" name="language" id="python" />
+        <label for="c">C</label>
+        <input type="checkbox" name="language" id="c" />
+        <label for="cpp">C++</label>
+        <input type="checkbox" name="language" id="cpp" />
+        <label for="rust">Rust</label>
+        <input type="checkbox" name="language" id="rust" />
+        <label for="java">Java</label>
+        <input type="checkbox" name="language" id="java" />
+      </fieldset>
+      <fieldset>
+        <legend>Final Comments</legend>
+        <label for="comments">Any comments/concerns?</label>
+        <textarea name="comments" id="comments"></textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
